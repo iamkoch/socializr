@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+    %title AMKO Consulting
+    %script{:src => "/js/application.js"}
+    %link{:type => "text/css", :rel => "stylesheet", :href=>"http://fonts.googleapis.com/css?family=Exo:600"}
+    %link{:type => "text/css", :rel => "stylesheet", :href=>"/css/reset.css"}
+    %link{:type => "text/css", :rel => "stylesheet", :href=>"/css/base.css"}
+  %body
+    #wrapper-outer
+      #wrapper-inner
+        %header
+          %nav
+            %ul
+              %li
+                %a{:href=>"/"}
+                  = "/ReddGex/"
+              %li
+                %a{:href=>"/about"}
+                  = "/About/"
+        %section
+          #content
+            = yield
