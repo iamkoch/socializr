@@ -9,7 +9,7 @@ module ReddGex
       term = params[:q]
       content_type :json
       result = Apis::RedditApi.do_search(term)
-      result.body
+      Yajl.dump result
     end
   end
 end

@@ -21,11 +21,12 @@ body {
     margin: 0 20px;
     #content {
       width: 100%;
+
       #search {
         width: 800px;
         margin: 60px auto;
         input[type=text] {
-          width: 600px;
+          width: 700px;
           height: 40px;
           font-size: 1em;
           padding: 0px 10px;
@@ -38,6 +39,12 @@ body {
           background-color: #ffffff;
           border: 1px solid #8b0000;
           border-radius: 10px;
+        }
+      }
+
+      #results {
+        .row {
+          padding: 10px;
         }
       }
     }
