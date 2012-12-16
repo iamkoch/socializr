@@ -11,7 +11,7 @@ templates.results = """
 
 templates.row = """
 
-  <div class="row">
-    <a href="http://reddit.com{{permalink}}">{{title}}</a>
+  <div class="row {{type}}">
+    <a href="{{permalink}}">{{title}}</a>
   </div>
 """

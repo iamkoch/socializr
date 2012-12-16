@@ -1,18 +1,25 @@
 require 'uri'
+require 'app/api/searchable'
 
 module Apis
-  class RedditApi
-    include HTTParty
+  class RedditApi < Searchable
 
     base_uri "reddit.com"
 
-    def self.do_search(term)
-      result = get("/search.json?q=#{URI.encode(term)}&sort=top")
+    def get_search_string(term)
+      "/search.json?q=#{URI.encode(term)}&sort=top"
+    end
+
+    def sanitize_results(result)
       sanitized = { "results" => [] }
       result['data']['children'].each { |i|
-        sanitized['results'].push({ "title" => i['data']['title'], "permalink" => i['data']['permalink']})
+        sanitized['results'].push({
+                                      "type" => "reddit",
+                                      "title" => i['data']['title'],
+                                      "permalink" => "http://reddit.com/#{i['data']['permalink']}"
+                                  })
       }
-      return sanitized
+      sanitized
     end
   end
 end
