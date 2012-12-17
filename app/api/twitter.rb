@@ -1,4 +1,4 @@
-require "app/api/searchable"
+require 'api/searchable'
 
 module Apis
   class TwitterApi < Searchable

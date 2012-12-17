@@ -1,5 +1,5 @@
 require 'uri'
-require 'app/api/searchable'
+require 'api/searchable'
 
 module Apis
   class RedditApi < Searchable

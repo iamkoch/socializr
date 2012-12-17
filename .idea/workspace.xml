@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="866bf941-0222-490f-920f-ed1fc21dcb7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/boot.rb" afterPath="$PROJECT_DIR$/app/boot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/reddit.rb" afterPath="$PROJECT_DIR$/app/api/reddit.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/twitter.rb" afterPath="$PROJECT_DIR$/app/api/twitter.rb" />
     </list>
     <ignored path="heroku-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,19 +24,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="twitter.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="twitter.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/api/twitter.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="9" selection-start="9" selection-end="17" vertical-scroll-proportion="0.0">
+                <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="boot.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="boot.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/boot.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.30421218">
+                <state line="13" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -45,10 +46,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="reddit.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="reddit.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/api/reddit.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="9" selection-start="23" selection-end="31" vertical-scroll-proportion="0.024232633">
+                <state line="1" column="13" selection-start="27" selection-end="27" vertical-scroll-proportion="0.024232633">
                   <folding />
                 </state>
               </provider>
@@ -136,9 +137,9 @@
         <option value="$PROJECT_DIR$/app/app.rb" />
         <option value="$PROJECT_DIR$/app/frontend/scripts/templates.js.coffee" />
         <option value="$PROJECT_DIR$/app/frontend/styles/base.css.scss" />
+        <option value="$PROJECT_DIR$/app/boot.rb" />
         <option value="$PROJECT_DIR$/app/api/twitter.rb" />
         <option value="$PROJECT_DIR$/app/api/reddit.rb" />
-        <option value="$PROJECT_DIR$/app/boot.rb" />
       </list>
     </option>
   </component>
@@ -574,23 +575,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/reddit.rb">
+    <entry file="file://$PROJECT_DIR$/app/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="23" selection-end="31" vertical-scroll-proportion="0.024232633">
+        <state line="13" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api/twitter.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="17" vertical-scroll-proportion="0.0">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/boot.rb">
+    <entry file="file://$PROJECT_DIR$/app/api/reddit.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.30421218">
+        <state line="1" column="13" selection-start="27" selection-end="27" vertical-scroll-proportion="0.024232633">
           <folding />
         </state>
       </provider>
