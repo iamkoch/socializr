@@ -12,6 +12,6 @@ templates.results = """
 templates.row = """
 
   <div class="row {{type}}">
-    <a href="{{permalink}}">{{title}}</a>
+    <a href="{{permalink}}" target="_blank">{{title}}</a>
   </div>
 """

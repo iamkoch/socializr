@@ -7,7 +7,7 @@ module Apis
     base_uri "reddit.com"
 
     def get_search_string(term)
-      "/search.json?q=#{URI.encode(term)}&sort=top"
+      "/search.json?q=#{URI.encode(term)}&sort=top&t=hour&limit=5"
     end
 
     def sanitize_results(result)

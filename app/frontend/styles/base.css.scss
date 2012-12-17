@@ -3,6 +3,7 @@ html, body {
   color: #333333;
 }
 body {
+  background: url(/images/crowd.jpg) no-repeat fixed center;
   a {
     text-decoration: none;
     color: #8b0000;
@@ -29,16 +30,25 @@ body {
           width: 700px;
           height: 40px;
           font-size: 1em;
-          padding: 0px 10px;
-          border-radius: 10px;
+          padding: 0px 0 0 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
           border: 1px solid #8b0000;
         }
         input[type=submit] {
-          height: 40px;
-          color: red;
+          height: 42px;
+          color: darkred;
           background-color: #ffffff;
           border: 1px solid #8b0000;
-          border-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          position: relative;
+          top: 0;
+          left: -8px;
+          width: 45px;
+          text-transform: uppercase;
+          font-family: 'Exo';
+          font-size: 1.2em;
         }
       }
 

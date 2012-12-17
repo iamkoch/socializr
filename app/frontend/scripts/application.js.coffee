@@ -2,7 +2,7 @@
 //= require templates
 
 $(document).ready () ->
-  $("#s").click () ->
+  doSubmit = () ->
     searchTerm = $("#q").val()
     $results = $("#results")
     $results.html("<div/>").addClass("loading")
@@ -12,4 +12,9 @@ $(document).ready () ->
       success: (response) ->
         if response
           rendered = Mustache.to_html(templates.results,response,templates)
-          $results.html(rendered).removeClass("loading")
+          $results.append(rendered).removeClass("loading")
+  $("#q").keypress (e) ->
+    if e.which == 13
+      doSubmit()
+  $("#s").click () ->
+    doSubmit()

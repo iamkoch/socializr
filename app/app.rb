@@ -14,12 +14,23 @@ module ReddGex
 
       content_type :json
 
-      red = Apis::RedditApi.new
-      twi = Apis::TwitterApi.new
-      red_res = red.do_search(term)
-      twi_res = twi.do_search(term)
-      new_res = { "results" => red_res["results"].concat(twi_res["results"]) }
-      Yajl.dump new_res
+      results = { "results" => [] }
+
+      apis = [Apis::RedditApi.new, Apis::TwitterApi.new]
+
+      threads = []
+
+      apis.each { |api|
+        threads.push(
+            Thread.new do
+              results["results"].concat(api.do_search(term)["results"])
+            end
+        )
+      }
+
+      threads.each { |t| t.join }
+
+      Yajl.dump results
     end
   end
 end
