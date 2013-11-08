@@ -16,7 +16,7 @@ module ReddGex
 
       results = { "results" => [] }
 
-      apis = [Apis::RedditApi.new, Apis::TwitterApi.new]
+      apis = [Apis::RedditApi.new, Apis::TwitterApi.new(TwitterConfig.new)]
 
       threads = []
 

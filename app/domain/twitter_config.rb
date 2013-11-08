@@ -1,0 +1,22 @@
+class TwitterConfig
+  TWITTER_CONSUMER_KEY = 'TWITTER_CONSUMER_KEY'
+  TWITTER_CONSUMER_SECRET = 'TWITTER_CONSUMER_SECRET'
+  TWITTER_TOKEN = 'TWITTER_TOKEN'
+  TWITTER_TOKEN_SECRET = 'TWITTER_TOKEN_SECRET'
+
+  def consumer_key
+    ENV[TWITTER_CONSUMER_KEY]
+  end
+
+  def consumer_secret
+    ENV[TWITTER_CONSUMER_SECRET]
+  end
+
+  def token
+    ENV[TWITTER_TOKEN]
+  end
+
+  def token_secret
+    ENV[TWITTER_TOKEN_SECRET]
+  end
+end

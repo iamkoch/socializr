@@ -1,7 +1,7 @@
 class Searchable
   include HTTParty
 
-  ERROR_SEARCH_NOT_OVERRIDDEN = "ERROR: Search string not overridden!"
+  ERROR_SEARCH_NOT_OVERRIDDEN = 'ERROR: Search string not overridden!'
 
   def sanitize_results(result)
     result
